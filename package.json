@@ -1,0 +1,21 @@
+{
+  "name": "reef-rugosity",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "珊瑚礁样带结构复杂度评估系统（焦散剥离 + 明暗恢复 + 链测粗糙度）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench": "node scripts/headless-bench.mjs",
+    "smoke": "node scripts/smoke-ui.mjs"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.3",
+    "vite": "^6.0.7",
+    "vitest": "^3.0.4"
+  }
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GPU 自检基准</title>
+  </head>
+  <body>
+    <div id="status">installing…</div>
+    <script type="module">
+      import { installBench } from '/src/bench.ts';
+      try {
+        installBench();
+        document.getElementById('status').textContent = 'ready';
+      } catch (e) {
+        document.getElementById('status').textContent = 'error: ' + e.message;
+      }
+    </script>
+  </body>
+</html>

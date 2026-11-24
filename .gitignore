@@ -16,3 +16,9 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+dist/
+*.log
+.vite-bench.log*
+.chrome-profile/
+.bench-chrome-profile/
+.smoke-chrome-profile/
